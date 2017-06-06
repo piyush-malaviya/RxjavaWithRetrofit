@@ -10,6 +10,10 @@ import okhttp3.Cache;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 
+/**
+ * OkHttpClientHelper class initialize OkHttpClient by setting cache size, cache directory,
+ * connection time out time and add logging interceptor for debug http call.
+ */
 class OkHttpClientHelper {
 
     private static final int DISK_CACHE_SIZE = 50 * 1024 * 1024; // 50MB
